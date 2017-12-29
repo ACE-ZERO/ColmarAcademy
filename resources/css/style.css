@@ -1,0 +1,72 @@
+html {
+  font-size: 16px;
+}
+
+/* header */
+
+header {
+  display: flex;
+  height: 4rem;
+  padding: 0 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav span {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+header nav .navborder {
+  border-right: 1rem solid rgb(149, 224, 223);
+}
+
+/* main banner */
+
+.mainBanner {
+  display: flex;
+  margin-top: 4rem;
+  background-color: rgb(216, 216, 216);
+  min-height: 40rem;
+  align-items: center;
+  color: rgb(74, 74, 74);
+}
+
+.mainBanner .imgBanner {
+  background-image: url("../../resources/images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 37.5rem;
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.button {
+  display: flex;
+  background-color: rgb(74, 74, 74);
+}
+
+.button h3 {
+  color: white;
+  margin: 0.5rem auto;
+}
