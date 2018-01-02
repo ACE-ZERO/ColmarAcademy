@@ -173,3 +173,22 @@ header nav .navMargin {
 .content2 span {
   margin: 0.5rem 0;
 }
+
+/* content3 */
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid rgb(216, 216, 216);
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer span {
+  margin: 1rem 1.5rem;
+}
