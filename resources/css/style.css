@@ -1,6 +1,7 @@
 html {
   font-size: 16px;
   font-family: serif;
+  color: rgb(74, 74, 74);
 }
 
 /* header */
@@ -56,6 +57,11 @@ header nav .navMargin {
   min-height: 40rem;
   align-items: center;
   color: rgb(74, 74, 74);
+  font-size: 1.5rem;
+}
+
+.mainBanner h2, .mainBanner p, .button {
+  margin-left: 1.5rem;
 }
 
 .mainBanner .imgBanner {
@@ -72,7 +78,72 @@ header nav .navMargin {
   background-color: rgb(74, 74, 74);
 }
 
-.button h3 {
+.button span {
   color: white;
   margin: 0.5rem auto;
+}
+
+/* content1 */
+
+.content1 {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  margin: 0;
+  padding: 2rem 1.5rem;
+}
+
+.content1 .imgInfo {
+  background-image: url('../../resources/images/information-main.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height:22rem;
+}
+
+.content1 .infos {
+  width: 60%;
+}
+ .content1 .info {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .sideInfo {
+   width: 40%;
+ }
+
+ .info img {
+   height: auto;
+   width: 35%;
+   margin: 1rem;
+ }
+
+.content1 .cont {
+  width: 65%;
+}
+
+.content1 h2, .content1 p {
+  margin-bottom: 0.5rem;
+}
+
+.guest {
+  background-color: rgb(216, 216, 216);
+}
+
+.content1 a {
+  text-decoration: none;
+  color: rgb(88, 151, 222);
+}
+
+/* content2 */
+
+.content2 {
+  background-color: rgb(216, 216, 216);
+  padding: 2rem 4.5rem;
+}
+
+.content2 h1 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
