@@ -2,6 +2,8 @@ html {
   font-size: 16px;
   font-family: serif;
   color: rgb(74, 74, 74);
+  margin: 0;
+  padding: 0;
 }
 
 /* header */
@@ -96,18 +98,22 @@ header nav .navMargin {
 
 .content1 .infos {
   width: 60%;
+  margin-right: 1.5rem;
 }
  .content1 .info {
    display: flex;
    align-items: center;
    justify-content: space-between;
+   border-bottom: 1px solid rgb(216, 216, 216);
+   border-left: 1px solid rgb(216, 216, 216);
+   margin: 1px;
  }
 
- .sideInfo {
+ .content1 .sideInfo {
    width: 40%;
  }
 
- .info img {
+ .content1 .info img {
    height: auto;
    width: 35%;
    margin: 1rem;
@@ -175,6 +181,64 @@ header nav .navMargin {
 }
 
 /* content3 */
+.content3 {
+  display: flex;
+  background-color: white;
+  margin: 0;
+}
+
+.thesis {
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.thesis .mainheader {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.thesis .pageInfo h1 {
+  margin-bottom: 0.5rem;
+}
+
+.content3 video {
+  height: auto;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.content3 .infos {
+  width: 60%;
+  margin-right: 1.5rem;
+}
+ .content3 .info {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .content3 .sideInfo {
+   width: 40%;
+ }
+
+ .content3 .info img {
+   height: auto;
+   width: 35%;
+   margin: 1rem;
+ }
+
+.content3 .cont {
+  width: 65%;
+
+}
+
+.content3 .fisma {
+  background-color: rgb(216, 216, 216);
+}
+
+.content3 h2, .content3 p {
+  margin-bottom: 0.5rem;
+}
 
 /* footer */
 footer {
