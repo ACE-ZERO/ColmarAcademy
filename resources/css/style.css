@@ -90,10 +90,8 @@ header nav .navMargin {
 }
 
 .content1 .imgInfo {
-  background-image: url('../../resources/images/information-main.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height:22rem;
+  height: auto;
+  width: 100%;
 }
 
 .content1 .infos {
