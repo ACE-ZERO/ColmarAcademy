@@ -1,9 +1,10 @@
 html {
   font-size: 16px;
-  font-family: serif;
+  font-family: sans-serif;
   color: rgb(74, 74, 74);
   margin: 0;
   padding: 0;
+  background-color: rgb(243, 245, 245);
 }
 
 /* header */
@@ -14,7 +15,7 @@ header {
   padding: 0;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: rgb(243, 245, 245);
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -50,6 +51,35 @@ header nav .navMargin {
   margin-right: 1.5rem;
 }
 
+.mobileNav {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    display: none;
+  }
+
+  .mobileNav {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    top: 0;
+    left: 0;
+  }
+
+  .mobileNav span {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
 /* main banner */
 
 .mainBanner {
@@ -61,7 +91,7 @@ header nav .navMargin {
   font-size: 1.5rem;
 }
 
-.mainBanner h2, .mainBanner p, .button {
+.mainBanner h1, .mainBanner p, .button {
   margin-left: 1.5rem;
 }
 
@@ -76,16 +106,46 @@ header nav .navMargin {
   background-color: rgb(74, 74, 74);
 }
 
-.button span {
+.button h3 {
   color: white;
   margin: 0.5rem auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .mainBanner {
+    flex-direction: column;
+  }
+
+  .mainBanner .imgBanner {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contentBanner {
+    padding: 2rem 0;
+    margin: 0;
+    width: 100%;
+  }
+  .button {
+    width: 90%;
+    background-color: rgb(150, 150, 150);
+    margin: 0 1rem;
+  }
+
+  .mainBanner h1 {
+    margin: 0 1rem;
+  }
+
+  .mainBanner p {
+    margin: 2rem 1rem 1.5rem 1rem;
+  }
 }
 
 /* content1 */
 
 .content1 {
   display: flex;
-  background-color: white;
+  background-color: inherit;
   justify-content: space-around;
   margin: 0;
   padding: 2rem 1.5rem;
@@ -136,6 +196,49 @@ header nav .navMargin {
   color: rgb(88, 151, 222);
 }
 
+@media only screen and (max-width: 480px) {
+  .infos {
+    display: none;
+  }
+  .content1 {
+    padding: 0;
+  }
+
+  .content1 .sideInfo {
+    width: 100%;
+  }
+
+  .content1 .info {
+    width: 100%;
+    flex-direction: column;
+    border: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .content1 .cont {
+    width: 100%;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .content1 .info img {
+    height: auto;
+    width: 100%;
+    margin: 1rem;
+    align-self: center;
+  }
+
+  .guest  {
+    background-color: inherit;
+  }
+
+  .guest .cont {
+    margin-bottom: 2rem;
+  }
+}
+
 /* content2 */
 
 .content2 {
@@ -160,7 +263,7 @@ header nav .navMargin {
 }
 
 .content2 .course {
-  background-color: white;
+  background-color: rgb(243, 245, 245);
   margin: 0 1rem 2rem 0;
   height:auto;
   width: 25%;
@@ -180,10 +283,43 @@ header nav .navMargin {
   margin: 0.5rem 0;
 }
 
+.content2 .mobileCourses {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .content2 {
+    background-color: inherit;
+  }
+
+  .content2 .courses {
+    display: none;
+  }
+
+  .content2 .mobileCourses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .content2 .mobileCourse {
+    background-color: rgb(216, 216, 216);
+    margin: 0 1rem 0.5rem 1rem;
+  }
+
+  .mobileCourse h2 {
+    margin: 1rem 0 1.5rem 1rem;
+  }
+
+  .content2 h1 {
+    margin-bottom: 1rem;
+  }
+}
+
 /* content3 */
 .content3 {
   display: flex;
-  background-color: white;
+  background-color: rgb(243, 245, 245);
   margin: 0;
 }
 
@@ -240,6 +376,33 @@ header nav .navMargin {
   margin-bottom: 0.5rem;
 }
 
+.thesisVid {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .content3 {
+    display: none;
+  }
+
+  .thesis .mainheader {
+    margin-bottom: 1rem;
+  }
+
+  .thesis {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .thesisVid {
+    display: flex;
+  }
+
+  .thesisVid video {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /* footer */
 footer {
   display: flex;
@@ -255,4 +418,10 @@ footer a {
 
 footer span {
   margin: 1rem 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  footer div {
+    display: none;
+  }
 }
